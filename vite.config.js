@@ -4,6 +4,9 @@ import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
   base: "./",
+  server: {
+    allowedHosts: true,
+  },
   plugins: [
     react({
       jsxRuntime: "automatic",

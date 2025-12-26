@@ -1,7 +1,7 @@
 export async function analyzeImage(file) {
   const form = new FormData();
   form.append("image", file);
-  const API_URL = "https://burako-counter-function-938457229232.europe-west1.run.app"; //import.meta.env.VITE_API_URL;
+  const API_URL = "https://burako-counter-function-938457229232.europe-west1.run.app"
 
 
   const res = await fetch(
