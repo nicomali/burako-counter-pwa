@@ -1,9 +1,11 @@
 export async function analyzeImage(file) {
   const form = new FormData();
   form.append("image", file);
+  const API_URL = import.meta.env.VITE_API_URL;
+
 
   const res = await fetch(
-    "https://TU_CLOUD_FUNCTION_URL/analyze",
+    `${API_URL}/analyze`,
     {
       method: "POST",
       headers: {
